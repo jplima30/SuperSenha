@@ -1,19 +1,18 @@
-//
-//  ViewController.swift
-//  SuperSenha
-//
-//  Created by jplima on 30/06/22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var totalPasswords: UITextField!
+    @IBOutlet weak var numberOfCharacters: UITextField!
+    @IBOutlet weak var lowerCaseLetters: UISwitch!
+    @IBOutlet weak var useNumbers: UISwitch!
+    @IBOutlet weak var UpperCaseLetters: UISwitch!
+    @IBOutlet weak var specialCharacter: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
 
 }
 

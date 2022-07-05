@@ -13,6 +13,7 @@
 		00680617286E227900836867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00680615286E227900836867 /* Main.storyboard */; };
 		00680619286E227A00836867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00680618286E227A00836867 /* Assets.xcassets */; };
 		0068061C286E227A00836867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0068061A286E227A00836867 /* LaunchScreen.storyboard */; };
+		00C7B5112874D81400014CC5 /* PasswordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C7B5102874D81400014CC5 /* PasswordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		00680618286E227A00836867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0068061B286E227A00836867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0068061D286E227A00836867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C7B5102874D81400014CC5 /* PasswordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				00680611286E227900836867 /* SceneDelegate.swift */,
 				00680613286E227900836867 /* ViewController.swift */,
 				00680615286E227900836867 /* Main.storyboard */,
+				00C7B5102874D81400014CC5 /* PasswordsViewController.swift */,
 				00680618286E227A00836867 /* Assets.xcassets */,
 				0068061A286E227A00836867 /* LaunchScreen.storyboard */,
 				0068061D286E227A00836867 /* Info.plist */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00680614286E227900836867 /* ViewController.swift in Sources */,
+				00C7B5112874D81400014CC5 /* PasswordsViewController.swift in Sources */,
 				00680610286E227900836867 /* AppDelegate.swift in Sources */,
 				00680612286E227900836867 /* SceneDelegate.swift in Sources */,
 			);
