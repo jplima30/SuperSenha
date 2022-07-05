@@ -1,10 +1,3 @@
-//
-//  PasswordsViewController.swift
-//  SuperSenha
-//
-//  Created by jplima on 05/07/22.
-//
-
 import UIKit
 
 class PasswordsViewController: UIViewController {
