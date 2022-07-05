@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  SuperSenha
-//
-//  Created by jplima on 30/06/22.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
