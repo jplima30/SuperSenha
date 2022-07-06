@@ -34,6 +34,29 @@ class PasswordGenerator {
         if useLetters {
             universe += letters
         }
+        
+        if useNumbers {
+            universe += numbers
+        }
+        
+        if useSpecialCharacters {
+            universe += specialCharacters
+        }
+        if useCapitalLetters {
+            universe += letters.uppercased()
+        }
+        
+        let universeArray = Array(universe)
+        while passwords.count < total {
+            var password = ""
+            for _ in 1...useNumberOfCharacters {
+                let index = Int (arc4random_uniform(UInt32(universeArray.count)))
+                password += String(universeArray[index])
+            }
+            password.append(password)
+        }
+        
+        return passwords
     }
     
 }
