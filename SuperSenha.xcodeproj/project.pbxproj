@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001A83B22875C2D300810AF5 /* SecurityTipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A83B12875C2D300810AF5 /* SecurityTipsViewController.swift */; };
+		001A83B42875C42E00810AF5 /* PasswordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001A83B32875C42E00810AF5 /* PasswordGenerator.swift */; };
 		00680610286E227900836867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0068060F286E227900836867 /* AppDelegate.swift */; };
 		00680612286E227900836867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00680611286E227900836867 /* SceneDelegate.swift */; };
 		00680614286E227900836867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00680613286E227900836867 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001A83B12875C2D300810AF5 /* SecurityTipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipsViewController.swift; sourceTree = "<group>"; };
+		001A83B32875C42E00810AF5 /* PasswordGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGenerator.swift; sourceTree = "<group>"; };
 		0068060C286E227900836867 /* SuperSenha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSenha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0068060F286E227900836867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00680611286E227900836867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +65,9 @@
 				0068060F286E227900836867 /* AppDelegate.swift */,
 				00680611286E227900836867 /* SceneDelegate.swift */,
 				00680613286E227900836867 /* ViewController.swift */,
+				001A83B32875C42E00810AF5 /* PasswordGenerator.swift */,
 				00C7B5102874D81400014CC5 /* PasswordsViewController.swift */,
+				001A83B12875C2D300810AF5 /* SecurityTipsViewController.swift */,
 				00680615286E227900836867 /* Main.storyboard */,
 				00680618286E227A00836867 /* Assets.xcassets */,
 				0068061A286E227A00836867 /* LaunchScreen.storyboard */,
@@ -143,8 +149,10 @@
 			files = (
 				00680614286E227900836867 /* ViewController.swift in Sources */,
 				00C7B5112874D81400014CC5 /* PasswordsViewController.swift in Sources */,
+				001A83B42875C42E00810AF5 /* PasswordGenerator.swift in Sources */,
 				00680610286E227900836867 /* AppDelegate.swift in Sources */,
 				00680612286E227900836867 /* SceneDelegate.swift in Sources */,
+				001A83B22875C2D300810AF5 /* SecurityTipsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

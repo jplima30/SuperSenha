@@ -1,0 +1,39 @@
+
+import Foundation
+
+class PasswordGenerator {
+    var useNumberOfCharacters: Int
+    var useLetters: Bool
+    var useNumbers: Bool
+    var useCapitalLetters: Bool
+    var useSpecialCharacters: Bool
+    
+    var passwords: [String] = []
+    
+    private let letters = "abcdefghijlmnopqrstuvwxyz"
+    private let specialCharacters = "!@#$%ˆ&*()_-+=~'|]}[{':;?/<>.,"
+    private let numbers = "0123456789"
+    
+    init(useNumberOfCharacters: Int, useLetters: Bool, useNumbers: Bool, useCapitalLetters: Bool, useSpecialCharacters: Bool) {
+        
+        var numchars = min(useNumberOfCharacters, 16)
+        numchars = max(numchars, 1)
+        
+        self.useSpecialCharacters = useSpecialCharacters
+        self.useLetters = useLetters
+        self.useNumbers = useNumbers
+        self.useCapitalLetters = useCapitalLetters
+        self.useNumberOfCharacters = numchars
+        
+    }
+    
+    func generate(total: Int) -> [String] {
+        passwords.removeAll()
+        var universe: String = ""
+        
+        if useLetters {
+            universe += letters
+        }
+    }
+    
+}

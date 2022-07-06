@@ -143,17 +143,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="cww-jJ-H1a"/>
                     <connections>
-                        <outlet property="UpperCaseLetters" destination="Uvh-RU-qmM" id="CIB-L5-CKX"/>
-                        <outlet property="lowerCaseLetters" destination="vQA-oh-mMJ" id="GL6-60-Y6b"/>
                         <outlet property="numberOfCharacters" destination="HW2-BH-dGS" id="iHK-fR-EBP"/>
-                        <outlet property="specialCharacter" destination="lY1-LO-XDI" id="lQr-ZL-m0O"/>
+                        <outlet property="swCapitalLetters" destination="Uvh-RU-qmM" id="CIB-L5-CKX"/>
+                        <outlet property="swNumbers" destination="QrI-EP-ATq" id="NJo-1h-uCH"/>
+                        <outlet property="swSpecialCharacters" destination="lY1-LO-XDI" id="lQr-ZL-m0O"/>
+                        <outlet property="swletters" destination="vQA-oh-mMJ" id="GL6-60-Y6b"/>
                         <outlet property="totalPasswords" destination="fQk-Ix-4D2" id="sJJ-AH-wJ0"/>
-                        <outlet property="useNumbers" destination="QrI-EP-ATq" id="NJo-1h-uCH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="110"/>
+            <point key="canvasLocation" x="541" y="110"/>
         </scene>
         <!--Lista de Senhas-->
         <scene sceneID="EEn-Cs-56b">
@@ -181,6 +181,9 @@
                                 <color key="tintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Gerar Novamente"/>
+                                <connections>
+                                    <action selector="generatePassword:" destination="fpc-nZ-OzO" eventType="touchUpInside" id="60S-E3-bf3"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-TE-IqV">
                                 <rect key="frame" x="16" y="162" width="382" height="571"/>
@@ -206,15 +209,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Lista de Senhas" id="8dB-eI-dJC"/>
+                    <connections>
+                        <outlet property="TextViewPassword" destination="QgW-TE-IqV" id="sxB-pw-4fU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3t-2E-efP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811.594202898551" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1326" y="110"/>
         </scene>
-        <!--View Controller-->
+        <!--Security Tips View Controller-->
         <scene sceneID="UFN-c0-MOm">
             <objects>
-                <viewController id="w0I-kl-Iht" sceneMemberID="viewController">
+                <viewController id="w0I-kl-Iht" customClass="SecurityTipsViewController" customModule="SuperSenha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nJ9-tq-beh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -230,6 +236,9 @@
                                 <color key="tintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Fechar"/>
+                                <connections>
+                                    <action selector="closeButton:" destination="w0I-kl-Iht" eventType="touchUpInside" id="jpY-Wt-fFY"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp3-En-YI0">
                                 <rect key="frame" x="45" y="90" width="325" height="655"/>
@@ -413,7 +422,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OZq-U0-p8a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2540.579710144928" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1325" y="784"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uot-dM-2Fl">
@@ -431,7 +440,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdH-Ze-IrW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="110"/>
+            <point key="canvasLocation" x="-283" y="110"/>
         </scene>
     </scenes>
     <resources>
