@@ -28,7 +28,6 @@ class PasswordsViewController: UIViewController {
         for password in passwords {
             TextViewPassword.text?.append(password + "\n\n")
         }
-        
     }
     
     @IBAction func generatePassword(_ sender: UIButton) {
