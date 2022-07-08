@@ -143,12 +143,12 @@
                     </view>
                     <navigationItem key="navigationItem" title="Gerador de Senhas" id="cww-jJ-H1a"/>
                     <connections>
-                        <outlet property="numberOfCharacters" destination="HW2-BH-dGS" id="iHK-fR-EBP"/>
                         <outlet property="swCapitalLetters" destination="Uvh-RU-qmM" id="CIB-L5-CKX"/>
+                        <outlet property="swLetters" destination="vQA-oh-mMJ" id="GL6-60-Y6b"/>
                         <outlet property="swNumbers" destination="QrI-EP-ATq" id="NJo-1h-uCH"/>
                         <outlet property="swSpecialCharacters" destination="lY1-LO-XDI" id="lQr-ZL-m0O"/>
-                        <outlet property="swletters" destination="vQA-oh-mMJ" id="GL6-60-Y6b"/>
-                        <outlet property="totalPasswords" destination="fQk-Ix-4D2" id="sJJ-AH-wJ0"/>
+                        <outlet property="tfNumberOfCharacters" destination="HW2-BH-dGS" id="iHK-fR-EBP"/>
+                        <outlet property="tfTotalPasswords" destination="fQk-Ix-4D2" id="sJJ-AH-wJ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -185,12 +185,11 @@
                                     <action selector="generatePassword:" destination="fpc-nZ-OzO" eventType="touchUpInside" id="60S-E3-bf3"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-TE-IqV">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="999999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QgW-TE-IqV">
                                 <rect key="frame" x="16" y="162" width="382" height="571"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -432,6 +431,7 @@ Há diversos programas disponíveis que armazenam os dados de maneira segura e a
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="re5-1X-6tL">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.59607843140000005" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
