@@ -1,2 +1,3 @@
 # SuperSenha
-Aplicativo para gerar senhas fortes e seguras
+Aplicativo para gerar senhas fortes e seguras.
+
